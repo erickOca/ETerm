@@ -20,14 +20,19 @@ class EncuestaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_encuesta)
 
-        val btnCam1 = findViewById<Button>(R.id.btnCam2)
-        val btnCam2 = findViewById<Button>(R.id.btnCam1)
+        val btnCam1 = findViewById<Button>(R.id.btnCam1)
+        val btnCam2 = findViewById<Button>(R.id.btnCam2)
         val btnCam3 = findViewById<Button>(R.id.btnCam3)
 
         //Evento al presionar el botón
         btnCam1.setOnClickListener {
             startForResult.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
-
+            btnCam2.setOnClickListener {
+                startForResult2.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
+                btnCam3.setOnClickListener {
+                    startForResult3.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
+                }
+            }
         }
 
     }
@@ -40,6 +45,24 @@ class EncuestaActivity : AppCompatActivity() {
                 val intent = result.data
                 val imageBitmap = intent?.extras?.get("data") as Bitmap
                 val imageView = findViewById<ImageView>(R.id.imageView)
+                imageView.setImageBitmap(imageBitmap)
+            }
+        }
+    private val startForResult2 =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
+            if (result.resultCode == Activity.RESULT_OK) {
+                val intent = result.data
+                val imageBitmap = intent?.extras?.get("data") as Bitmap
+                val imageView = findViewById<ImageView>(R.id.imageView2)
+                imageView.setImageBitmap(imageBitmap)
+            }
+        }
+    private val startForResult3 =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
+            if (result.resultCode == Activity.RESULT_OK) {
+                val intent = result.data
+                val imageBitmap = intent?.extras?.get("data") as Bitmap
+                val imageView = findViewById<ImageView>(R.id.imageView3)
                 imageView.setImageBitmap(imageBitmap)
             }
         }
