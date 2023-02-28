@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EncuestaMainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/imagen_encuesta"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                >
+                <TextView
+                    android:text="Encuesta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="54sp"
+                    android:textStyle="bold"
+
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/firstLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="264dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="39dp"
+                    android:layout_height="22dp"
+                    android:text="SI"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="33dp"
+                    android:layout_height="26dp"
+                    android:text="NO"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fourthLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p1"
+                    android:layout_width="184dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="50dp"
+                    android:text="¿Su terminal se encuentra operando correctamente?" />
+
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="37dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="26dp"
+                    android:onClick="onRadioButtonClicked" />
+
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:layout_width="37dp"
+                    android:layout_height="38dp"
+
+                    android:onClick="onRadioButtonClicked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fiveLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p2"
+                    android:layout_width="185dp"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="50dp"
+                    android:text="¿Se le dio capacitacion sobre el uso y manejo de su terminal?" />
+
+                <RadioButton
+                    android:id="@+id/r3"
+                    android:layout_width="37dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="26dp"
+                    android:onClick="onRadioButtonClicked" />
+
+                <RadioButton
+                    android:id="@+id/r4"
+                    android:layout_width="37dp"
+                    android:layout_height="38dp"
+                    android:onClick="onRadioButtonClicked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sixLayout"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p3"
+                    android:layout_width="185dp"
+                    android:layout_height="72dp"
+                    android:layout_marginStart="50dp"
+                    android:text="¿Tecnico se encontro uniformado? (esto quiere decir con una playera tipo polo color gris" />
+
+                <RadioButton
+                    android:id="@+id/r5"
+                    android:layout_width="37dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="26dp"
+                    android:onClick="onRadioButtonClicked" />
+
+                <RadioButton
+                    android:id="@+id/r6"
+                    android:layout_width="37dp"
+                    android:layout_height="38dp"
+                    android:onClick="onRadioButtonClicked" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sevenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/p4"
+                    android:layout_width="186dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="50dp"
+                    android:text="¿El tecnico fue amable al realizar el servicio?" />
+
+                <RadioButton
+                    android:id="@+id/r8"
+                    android:layout_width="37dp"
+                    android:layout_height="38dp"
+                    android:layout_marginStart="26dp"
+                    android:onClick="onRadioButtonClicked" />
+
+                <RadioButton
+                    android:id="@+id/r9"
+                    android:layout_width="37dp"
+                    android:layout_height="38dp"
+                    android:onClick="onRadioButtonClicked" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="138dp"
+                android:layout_height="21dp"
+                android:layout_gravity="top"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:text="FOTO DEL TECNICO"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/eightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCam1"
+                    android:layout_width="165dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/yellow"
+                    android:text="TOMAR FOTO"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="105dp"
+                    android:layout_height="69dp"
+                    android:layout_marginStart="50dp"
+                    app:layout_constraintStart_toEndOf="@+id/btnCam1"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="153dp"
+                android:layout_height="35dp"
+                android:layout_gravity="top"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:text="FOTO DE LA TERMINAL O INSUMO"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/nineLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCam2"
+                    android:layout_width="165dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/yellow"
+                    android:text="TOMAR FOTO"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="105dp"
+                    android:layout_height="69dp"
+                    android:layout_marginStart="50dp"
+                    app:layout_constraintStart_toEndOf="@+id/btnCam2"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="153dp"
+                android:layout_height="35dp"
+                android:layout_gravity="top"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:text="FOTO DE LA TERMINAL O INSUMO"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/elevenLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCam3"
+                    android:layout_width="165dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="50dp"
+                    android:background="@color/yellow"
+                    android:text="TOMAR FOTO"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="105dp"
+                    android:layout_height="69dp"
+                    android:layout_marginStart="50dp"
+                    app:layout_constraintStart_toEndOf="@+id/btnCam3"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center|fill_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtLatitud"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:autofillHints="latitud"
+                    android:hint="@string/hint_latitud"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/txtLongitud"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:autofillHints="longitud"
+                    android:hint="@string/hint_longitud"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLatitud" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/threeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center|fill_horizontal"
+                android:orientation="horizontal">
+
+
+                                <fragment
+                                    android:id="@+id/map"
+                                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="450dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="5dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/txtLongitud"
+                                    map:cameraZoom="10"
+                                    map:uiRotateGestures="true"
+                                    map:uiZoomControls="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/twelveLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button4"
+                    android:layout_width="379dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/yellow"
+                    android:text="Guardar"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

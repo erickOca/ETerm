@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">ETerm</string>
+    <string name="app_name">My Map CDP</string>
+    <string name="hint_latitud">Latitud</string>
+    <string name="hint_longitud">Longitud</string>
 </resources>
