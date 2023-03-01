@@ -17,37 +17,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/imagen_encuesta"
-                android:orientation="vertical"
                 android:gravity="center"
+                android:orientation="vertical">
 
-                >
                 <TextView
-                    android:text="Encuesta"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Encuesta"
                     android:textColor="@android:color/black"
                     android:textSize="54sp"
-                    android:textStyle="bold"
+                    android:textStyle="bold" />
 
-                     />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/firstLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="264dp"
+                android:layout_marginStart="305dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView12"
                     android:layout_width="39dp"
                     android:layout_height="22dp"
                     android:text="SI"
@@ -55,7 +55,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView13"
                     android:layout_width="33dp"
                     android:layout_height="26dp"
                     android:text="NO"
@@ -64,222 +63,206 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/fourthLayout"
+                style="@style/linearLayout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-
-                android:orientation="horizontal">
+                android:layout_height="38dp">
 
                 <TextView
-                    android:id="@+id/p1"
-                    android:layout_width="184dp"
-                    android:layout_height="47dp"
-                    android:layout_marginStart="50dp"
+                    style="@style/linearLayout"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
                     android:text="¿Su terminal se encuentra operando correctamente?" />
 
                 <RadioButton
                     android:id="@+id/r1"
+                    style="@style/radioButton"
                     android:layout_width="37dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="26dp"
-                    android:onClick="onRadioButtonClicked" />
+                    android:layout_height="38dp" />
 
                 <RadioButton
                     android:id="@+id/r2"
                     android:layout_width="37dp"
-                    android:layout_height="38dp"
-
-                    android:onClick="onRadioButtonClicked" />
+                    android:layout_height="38dp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/fiveLayout"
+                style="@style/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="20dp">
 
                 <TextView
-                    android:id="@+id/p2"
-                    android:layout_width="185dp"
+                    style="@style/linearLayout"
+                    android:layout_width="230dp"
                     android:layout_height="62dp"
-                    android:layout_marginStart="50dp"
                     android:text="¿Se le dio capacitacion sobre el uso y manejo de su terminal?" />
 
                 <RadioButton
                     android:id="@+id/r3"
+                    style="@style/radioButton"
                     android:layout_width="37dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="26dp"
-                    android:onClick="onRadioButtonClicked" />
+                    android:layout_height="38dp" />
 
                 <RadioButton
                     android:id="@+id/r4"
                     android:layout_width="37dp"
-                    android:layout_height="38dp"
-                    android:onClick="onRadioButtonClicked" />
+                    android:layout_height="38dp" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/sixLayout"
+                style="@style/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="79dp"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="20dp">
 
                 <TextView
-                    android:id="@+id/p3"
-                    android:layout_width="185dp"
+                    style="@style/linearLayout"
+                    android:layout_width="230dp"
                     android:layout_height="72dp"
-                    android:layout_marginStart="50dp"
                     android:text="¿Tecnico se encontro uniformado? (esto quiere decir con una playera tipo polo color gris" />
 
                 <RadioButton
                     android:id="@+id/r5"
+                    style="@style/radioButton"
                     android:layout_width="37dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="26dp"
-                    android:onClick="onRadioButtonClicked" />
+                    android:layout_height="38dp" />
 
                 <RadioButton
                     android:id="@+id/r6"
                     android:layout_width="37dp"
-                    android:layout_height="38dp"
-                    android:onClick="onRadioButtonClicked" />
+                    android:layout_height="38dp" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/sevenLayout"
+                style="@style/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:orientation="horizontal">
+                android:layout_marginTop="20dp">
 
                 <TextView
                     android:id="@+id/p4"
-                    android:layout_width="186dp"
+                    style="@style/linearLayout"
+                    android:layout_width="230dp"
                     android:layout_height="46dp"
-                    android:layout_marginStart="50dp"
                     android:text="¿El tecnico fue amable al realizar el servicio?" />
 
                 <RadioButton
                     android:id="@+id/r8"
+                    style="@style/radioButton"
                     android:layout_width="37dp"
-                    android:layout_height="38dp"
-                    android:layout_marginStart="26dp"
-                    android:onClick="onRadioButtonClicked" />
+                    android:layout_height="38dp" />
 
                 <RadioButton
                     android:id="@+id/r9"
                     android:layout_width="37dp"
-                    android:layout_height="38dp"
-                    android:onClick="onRadioButtonClicked" />
+                    android:layout_height="38dp" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView2"
+                style="@style/textImagen"
                 android:layout_width="138dp"
                 android:layout_height="21dp"
-                android:layout_gravity="top"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="20dp"
-                android:text="FOTO DEL TECNICO"
-                android:textStyle="bold" />
+                android:text="FOTO DEL TECNICO" />
 
             <LinearLayout
-                android:id="@+id/eightLayout"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal">
-
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnCam1"
-                    android:layout_width="165dp"
+                    android:layout_width="200dp"
                     android:layout_height="36dp"
-                    android:layout_marginStart="50dp"
                     android:background="@color/yellow"
-                    android:text="TOMAR FOTO"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
+                    android:text="TOMAR FOTO" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="105dp"
-                    android:layout_height="69dp"
-                    android:layout_marginStart="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
                     app:layout_constraintStart_toEndOf="@+id/btnCam1"
                     tools:srcCompat="@tools:sample/avatars" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView3"
+                style="@style/textImagen"
                 android:layout_width="153dp"
                 android:layout_height="35dp"
-                android:layout_gravity="top"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="20dp"
-                android:text="FOTO DE LA TERMINAL O INSUMO"
-                android:textStyle="bold" />
+                android:text="FOTO DE LA TERMINAL O INSUMO" />
 
             <LinearLayout
-                android:id="@+id/nineLayout"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnCam2"
-                    android:layout_width="165dp"
+                    android:layout_width="200dp"
                     android:layout_height="36dp"
-                    android:layout_marginStart="50dp"
                     android:background="@color/yellow"
                     android:text="TOMAR FOTO"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="105dp"
-                    android:layout_height="69dp"
-                    android:layout_marginStart="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
                     app:layout_constraintStart_toEndOf="@+id/btnCam2"
                     tools:srcCompat="@tools:sample/avatars" />
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView4"
+                style="@style/textImagen"
                 android:layout_width="153dp"
                 android:layout_height="35dp"
-                android:layout_gravity="top"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="20dp"
-                android:text="FOTO DE LA TERMINAL O INSUMO"
-                android:textStyle="bold" />
+                android:text="FOTO DE LA TERMINAL O INSUMO" />
 
             <LinearLayout
-                android:id="@+id/elevenLayout"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal">
-
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnCam3"
-                    android:layout_width="165dp"
+                    android:layout_width="200dp"
                     android:layout_height="36dp"
-                    android:layout_marginStart="50dp"
                     android:background="@color/yellow"
                     android:text="TOMAR FOTO"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="105dp"
-                    android:layout_height="69dp"
-                    android:layout_marginStart="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
                     app:layout_constraintStart_toEndOf="@+id/btnCam3"
                     tools:srcCompat="@tools:sample/avatars" />
             </LinearLayout>
@@ -288,44 +271,56 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:gravity="center|fill_horizontal"
+                android:gravity="center"
                 android:orientation="horizontal">
 
-                <EditText
-                    android:id="@+id/txtLatitud"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/latitud"
+                    style="@style/LoginTextInputOuterFieldStyle"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_margin="10dp"
                     android:autofillHints="latitud"
                     android:hint="@string/hint_latitud"
                     android:inputType="text"
-                    android:minHeight="48dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <EditText
-                    android:id="@+id/txtLongitud"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtLatitud"
+                        style="@style/LoginTextInputInnerFieldStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/longitud"
+                    style="@style/LoginTextInputOuterFieldStyle"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
+                    android:layout_margin="10dp"
                     android:autofillHints="longitud"
                     android:hint="@string/hint_longitud"
                     android:inputType="text"
-                    android:minHeight="48dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/txtLatitud" />
+                    app:layout_constraintTop_toBottomOf="@+id/txtLatitud">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtLongitud"
+                        style="@style/LoginTextInputInnerFieldStyle"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/threeLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -333,24 +328,24 @@
                 android:orientation="horizontal">
 
 
-                                <fragment
-                                    android:id="@+id/map"
-                                    android:name="com.google.android.gms.maps.SupportMapFragment"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="450dp"
-                                    android:layout_marginStart="5dp"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginEnd="5dp"
-                                    app:layout_constraintEnd_toEndOf="parent"
-                                    app:layout_constraintStart_toStartOf="parent"
-                                    app:layout_constraintTop_toBottomOf="@+id/txtLongitud"
-                                    map:cameraZoom="10"
-                                    map:uiRotateGestures="true"
-                                    map:uiZoomControls="true" />
+                <fragment
+                    android:id="@+id/map"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="450dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txtLongitud"
+                    map:cameraZoom="10"
+                    map:uiRotateGestures="true"
+                    map:uiZoomControls="true" />
+
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/twelveLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"

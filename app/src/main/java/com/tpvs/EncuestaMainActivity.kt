@@ -23,24 +23,23 @@ import com.google.android.gms.maps.model.MarkerOptions
 class EncuestaMainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapClickListener,
     GoogleMap.OnMapLongClickListener {
 
+    var mMap: GoogleMap? = null
     var txtLatitud: EditText? = null
     var txtLongitud: EditText? = null
-    var mMap: GoogleMap? = null
 
     @RequiresApi(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_encuesta_main)
 
+        txtLatitud = findViewById(R.id.txtLatitud)
+        txtLongitud = findViewById(R.id.txtLongitud)
         val btnCam1 = findViewById<Button>(R.id.btnCam1)
         val btnCam2 = findViewById<Button>(R.id.btnCam2)
         val btnCam3 = findViewById<Button>(R.id.btnCam3)
-        txtLatitud = findViewById(R.id.txtLatitud)
-        txtLongitud = findViewById(R.id.txtLongitud)
-        //mapa
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment!!.getMapAsync(this)
-        //camara
+
         btnCam1.setOnClickListener {
             startForResult.launch(Intent(MediaStore.ACTION_IMAGE_CAPTURE))
             btnCam2.setOnClickListener {
@@ -78,9 +77,7 @@ class EncuestaMainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.
                 val imageView = findViewById<ImageView>(R.id.imageView3)
                 imageView.setImageBitmap(imageBitmap)
             }
-
-
-    }
+        }
 
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap

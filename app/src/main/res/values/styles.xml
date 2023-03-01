@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="linearLayout" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="radioButton" parent="TextAppearance.AppCompat">
+        <item name="android:layout_marginStart">60dp</item>
+    </style>
+    <style name="imagen" parent="TextAppearance.AppCompat">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="textImagen" parent="TextAppearance.AppCompat">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
