@@ -21,6 +21,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import java.io.File
 import java.io.IOException
 import java.util.*
 
@@ -125,7 +126,7 @@ class EncuestaMainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.
         val contentValues = ContentValues().apply {
             put(MediaStore.Images.Media.DISPLAY_NAME, IMAGE_FILE_NAME)
             put(MediaStore.Images.Media.MIME_TYPE, "image/jpeg")
-            put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES)
+            put(MediaStore.Images.Media.RELATIVE_PATH, Environment.DIRECTORY_PICTURES + File.separator + "my_images")
         }
 
         val resolver = contentResolver
