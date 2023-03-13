@@ -41,4 +41,16 @@ class DbHelper(contexto: Context) : SQLiteOpenHelper(contexto, DB_NAME, null, 1)
             return "Encuesta insertada correctamente"
         }
     }
+//    fun readEncuesta():MutableList<Encuesta>{
+//        var lista:MutableList<Encuesta> = ArrayList()
+//        val db =  this.readableDatabase
+//        val sql = "SELECT ID , DIRECCION , FECHA FROM Encuesta "
+//        val resultado = db.rawQuery(sql,null)
+//        if(resultado.moveToFirst()){
+//            do {
+//                var encuesta= Encuesta()
+//                encuesta.idEncuesta = resultado.getString(resultado.getColumnIndex())
+//            }
+//        }
+//    }
 }

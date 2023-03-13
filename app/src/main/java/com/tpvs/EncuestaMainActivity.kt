@@ -239,6 +239,7 @@ class EncuestaMainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.
         println("" + encuesta)
         dbHelper.saveEncuesta(encuesta)
     }
+
 }
 
 

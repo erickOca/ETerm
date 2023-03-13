@@ -12,8 +12,7 @@
         <item name="android:orientation">horizontal</item>
     </style>
     <style name="textImagen" parent="TextAppearance.AppCompat">
-        <item name="android:layout_gravity">center</item>
-        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
         <item name="android:textStyle">bold</item>
     </style>
 </resources>

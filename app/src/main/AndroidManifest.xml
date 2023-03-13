@@ -5,6 +5,7 @@
     <uses-feature
         android:name="android.hardware.camera2"
         android:required="true" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -20,6 +21,9 @@
         android:theme="@style/Theme.ETerm"
         tools:targetApi="31" >
         <activity
+            android:name=".SignInActivity"
+            android:exported="false" />
+        <activity
             android:name=".MapActivity"
             android:exported="false" />
 
@@ -31,7 +35,7 @@
             android:name=".EncuestaActivity"
             android:exported="false" />
         <activity
-            android:name=".EncuestaMainActivity"
+            android:name="EncuestaMainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +43,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SignInActivity"
+            android:name=".EncuestaTableActivity"
             android:exported="true" />
         <activity
             android:name=".SignUpActivity"

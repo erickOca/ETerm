@@ -23,8 +23,11 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnMapClic
         txtLatitud = findViewById(R.id.txtLatitud)
         txtLongitud = findViewById(R.id.txtLongitud)
 
-        val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
-        mapFragment!!.getMapAsync(this)
+        val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+        mapFragment.getMapAsync { googleMap ->
+            // código para manejar el mapa de Google
+        }
+
     }
 
     override fun onMapReady(googleMap: GoogleMap) {
